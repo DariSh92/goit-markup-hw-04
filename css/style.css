@@ -200,6 +200,8 @@ img {
 /* Проэкты (картинки) */
 
 .main-section {
+  /* height: 600px;
+  max-width: 1600px; */
   padding-top: 200px;
   padding-bottom: 280px;
   text-align: center;
@@ -297,6 +299,22 @@ img {
 
 /* Секция герой */
 
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--main-bcg-color);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+}
 .section-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -319,6 +337,15 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   border-radius: 4px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--filters-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 .features {
   display: flex;
