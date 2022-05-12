@@ -124,6 +124,7 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-bottom: 9pxs;
   color: var(--title-text-color);
   font-weight: 400;
   line-height: 1.7;
@@ -419,10 +420,25 @@ img {
   padding-bottom: 30px;
   text-align: center;
 }
-
+.team-margin {
+  margin-right: 10px;
+}
+.team-margin:last-child {
+  margin-right: 0;
+}
 .team-section {
   background-color: var(--filters-color);
 }
+
+.team-social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
 .team-photo {
   background-color: var(--primary-white-color);
 }
@@ -447,6 +463,13 @@ img {
 .team-leads {
   margin-left: 30px;
   background-color: var(--primary-white-color);
+}
+.team-l {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 .team-leads:first-child {
   margin-left: 0;
@@ -483,6 +506,46 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+/* Cекция постоянные клиенты */
+
+.client-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.client {
+  margin-right: 30px;
+}
+.client:last-child {
+  margin-right: 0;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* .client-icon {
+  width: 170px;
+  height: 92px;
+} */
 
 /* Футер */
 
