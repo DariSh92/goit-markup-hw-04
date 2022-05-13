@@ -447,10 +447,11 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  color: var(--icon-color);
 }
-.social-icon {
+/* .social-icon {
   fill: currentColor;
-}
+} */
 
 .team-photo {
   background-color: var(--primary-white-color);
@@ -536,7 +537,6 @@ img {
 }
 .client {
   margin-right: 30px;
-  outline: 2px solid tomato;
 }
 .client:last-child {
   margin-right: 0;
@@ -547,10 +547,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
   cursor: pointer;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
 }
-
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
 .client-list {
   display: flex;
   margin: 0;
@@ -565,6 +571,7 @@ img {
 /* Футер */
 
 .footer-container {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -583,8 +590,6 @@ img {
   font-size: 14px;
   line-height: 1.15;
   margin: 0;
-  /* margin-top: 72px;
-  margin-bottom: 20px; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -594,4 +599,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 70px;
+  margin-bottom: 60px;
+  align-items: baseline;
 }
