@@ -106,7 +106,6 @@ imge {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--main-bcg-color);
-  align-items: baseline;
 }
 /* Стиль контакты */
 
@@ -164,9 +163,10 @@ imge {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border: none;
+  border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 
   cursor: pointer;
 }
@@ -175,7 +175,6 @@ imge {
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 .filters {
   padding-top: 94px;
@@ -198,6 +197,7 @@ imge {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border: none;
   border-radius: 4px;
 }
 .filters-list {
@@ -212,7 +212,6 @@ imge {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /* Проэкты (картинки) */
@@ -230,7 +229,13 @@ imge {
   text-decoration: none;
   display: block;
 }
+.projects:hover,
+.projects:focus{
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
+}
 .projects img {
   display: block;
 }
@@ -282,12 +287,6 @@ imge {
   margin-bottom: 30px;
 }
 
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-card:nth-child(3n) {
   margin-right: 0;
 }
@@ -297,10 +296,8 @@ imge {
 }
 
 .adress-list-f {
-  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 2;
+  line-height: 1.71;
   text-decoration: none;
 }
 
@@ -308,6 +305,14 @@ imge {
 .adress-list-f:focus {
   color: var(--accent-color);
 }
+.contacts-link-f {
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+.contacts-link-f:last-child {
+  margin-bottom: 0;
+}
+
 .location {
   font-style: normal;
 }
@@ -646,6 +651,7 @@ imge {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+  align-items: baseline;
 }
 .contacts {
   list-style: none;
@@ -665,11 +671,6 @@ imge {
   color: var(--primary-white-color);
 }
 .footer-add {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-left: 70px;
-  /* margin-bottom: 60px; */
-  align-items: baseline;
 }
