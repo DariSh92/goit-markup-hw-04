@@ -41,13 +41,14 @@ imge {
   color: var(--primary-text-color);
 }
 .logo-f {
-  display: ;
+  display: block;
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -131,13 +132,12 @@ imge {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 400;
   line-height: 1.7;
   text-decoration: none;
 }
-. .adress-list:hover,
+.adress-list:hover,
 .adress-list:focus {
   color: var(--accent-color);
 }
