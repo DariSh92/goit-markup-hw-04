@@ -599,7 +599,7 @@ body {
   z-index: 2;
   opacity: 0;
   margin: 0;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -610,7 +610,6 @@ body {
   padding: 0 24px;
   display: flex;
   align-items: center;
-  transition: 0.3s;
 }
 
 .project-card:hover .hidden-text,
@@ -621,7 +620,6 @@ body {
 .projects {
   text-decoration: none;
   display: block;
-  transition: 0.3s;
 }
 
 .projects:hover,
