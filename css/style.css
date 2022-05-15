@@ -350,9 +350,22 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  color: var(--icon-color);
+}
+.social-footer {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   color: var(--primary-white-color);
 }
 
+.social-footer:hover,
+.social-footer:focus {
+  background-color: var(--accent-color);
+}
 .team-photo {
   background-color: var(--primary-white-color);
 }
